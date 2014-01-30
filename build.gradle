@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.mongodb:mongo-java-driver:2.11.3'
+    compile 'net.sf.opencsv:opencsv:2.3'
+
+}
+
+idea {
+    project {
+        jdkName = '1.7'
+        languageLevel = '1.7'
+    }
+}
